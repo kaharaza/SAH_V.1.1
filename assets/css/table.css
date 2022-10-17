@@ -1,0 +1,47 @@
+.table-purple {
+    --bs-table-bg: #d5c9fb;
+    --bs-table-striped-bg: #d5c9fa;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #d5c9fb;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #d5c9fa;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #e7e0ff;
+}
+
+.table-darkorange {
+    --bs-table-bg: #e0b856;
+    --bs-table-striped-bg: #e0b85a;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #e0b856;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e0b85a;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #dfc077;
+}
+
+.table-dark-pink {
+    --bs-table-bg: #ff9edf;
+    --bs-table-striped-bg:#ffa6e3;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #ff9edf;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #ffa6e3;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #ffbbe9;
+}
+
+.table-light-green{
+    --bs-table-bg: #e2f0d9;
+    --bs-table-striped-bg:#e9f1e3;
+    --bs-table-striped-color: #000;
+    --bs-table-active-bg: #e2f0d9;
+    --bs-table-active-color: #000;
+    --bs-table-hover-bg: #e9f1e3;
+    --bs-table-hover-color: #000;
+    color: #000;
+    border-color: #f3f3f2;
+}

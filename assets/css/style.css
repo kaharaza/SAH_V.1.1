@@ -1,0 +1,588 @@
+html body {
+    height: 100%;
+    font-family: "Prompt", sans-serif;
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    z-index: 9999;
+    right: 2%;
+    cursor: pointer;
+}
+
+/*** ICON LOGO ***/
+.cuttom-iconlogo img {
+    width: 80%;
+    height: 50%;
+}
+
+@media (max-width: 414px){
+    .cuttom-iconlogo img {
+        width: 70%;
+        height: 50%;
+    }
+}
+
+/*** Spinner ***/
+#spinner {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .5s ease-out, visibility 0s linear .5s;
+    z-index: 99999;
+}
+
+#spinner.show {
+    transition: opacity .5s ease-out, visibility 0s linear 0s;
+    visibility: visible;
+    opacity: 1;
+}
+
+
+
+/*** Navbar ***/
+
+.navbar.sticky-top {
+    top: -100px;
+    transition: .5s;
+}
+
+.navbar .navbar-nav .nav-link {
+    margin-left: 30px;
+    padding: 25px 0;
+    color: #FFFFFF;
+    font-weight: 500;
+    text-transform: uppercase;
+    outline: none;
+}
+
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .nav-link.active {
+    color:#2e00fd59;
+    font-weight: bold;
+}
+
+.navbar .dropdown-toggle::after {
+    border: none;
+    content: "\f107";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    vertical-align: middle;
+    margin-left: 8px;
+}
+
+@media (max-width: 991.98px) {
+    .navbar .navbar-nav .nav-link  {
+        margin-left: 0;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .navbar .navbar-nav {
+        margin-top: 25px;
+        border-top: 1px solid #EEEEEE;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: block;
+        border: none;
+        margin-top: 0;
+        top: 150%;
+        right: 0;
+        opacity: 0;
+        visibility: hidden;
+        transition: .5s;
+    }
+
+    .navbar .nav-item:hover .dropdown-menu {
+        top: 100%;
+        visibility: visible;
+        transition: .5s;
+        opacity: 1;
+    }
+}
+
+
+
+/*** Header ***/
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    background: rgba(0, 0, 0, .2);
+    z-index: 1;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 15%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 4rem;
+    height: 4rem;
+    background-color: #6cc9ff00;
+    border: 15px solid #6cc9ff00;
+    border-radius: 50px;
+}
+
+.carousel-caption .breadcrumb-item+.breadcrumb-item::before {
+    content: "\f111";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: var(--primary);
+}
+
+
+@media (max-width: 768px) {
+    #header-carousel .carousel-item {
+        position: relative;
+        min-height: 221px;
+    }
+    
+    #header-carousel .carousel-item img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        width: 3rem;
+        height: 3rem;
+        border-width: 10px;
+    }
+    .display-2 {
+        font-size: calc(0.575rem + 3.9vw);
+        font-weight: 200;
+        line-height: 1.2;
+    }
+}
+
+/*** page-header ***/
+.page-about {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/h/h1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-surgery-1 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/16.png) center center no-repeat;
+    background-size: cover;
+}
+.page-surgery-2 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/17.png) center center no-repeat;
+    background-size: cover;
+}
+.page-surgery-3 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/18.png) center center no-repeat;
+    background-size: cover;
+}
+.page-surgery-4 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/19.png) center center no-repeat;
+    background-size: cover;
+}
+.page-surgery-5 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/20.png) center center no-repeat;
+    background-size: cover;
+}
+
+
+.page-header {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/1-1.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header2 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/2.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header3 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/3.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header4 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/4.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header5 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/5.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header6 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/6.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header7 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/7.jpg) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header8 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/8.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header9 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/9.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header10 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/10.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header11 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/11.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header12 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/12.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header13 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/13.jpg) center center no-repeat;
+    background-size: cover;
+}
+.page-header14 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/14.png) center center no-repeat;
+    background-size: cover;
+}
+.page-header15 {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/15.png) center center no-repeat;
+    background-size: cover;
+}
+
+.page-header .breadcrumb-item+.breadcrumb-item::before {
+    color: #999999;
+}
+
+/*** Service ***/
+.service-text::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 0;
+    top: 0;
+    left: 0;
+    background: #6cc9ff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.service-item:hover .service-text::before {
+    height: 100%;
+    opacity: 1;
+}
+
+.service-text * {
+    position: relative;
+    transition: .5s;
+    z-index: 1;
+}
+
+.service-item:hover .service-text * {
+    color: #FFFFFF !important;
+}
+
+/*** Team ***/
+.team-text {
+    position: absolute;
+    width: 80%;
+    bottom: 0px;
+    left: 0;
+    transition: .5s;
+}
+
+.team-item:hover .team-text {
+    width: 100%;
+}
+
+.team-text * {
+    transition: .5s;
+}
+
+.team-item:hover .team-text * {
+    letter-spacing: 2px;
+}
+
+/*** Testimonial ***/
+
+.testimonial-carousel .owl-item img {
+    width: 100%;
+    height: auto;
+
+}
+
+.testimonial-carousel .owl-nav {
+    margin-top: 30px;
+    display: flex;
+    justify-content: start;
+}
+
+.testimonial-carousel .owl-nav .owl-prev,
+.testimonial-carousel .owl-nav .owl-next {
+    margin-right: 15px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* color: #6cc9ff;
+    border: 2px solid #20adff; */
+    border-radius: 50px;
+    font-size: 30px;
+    transition: .5s;
+}
+
+.testimonial-carousel .owl-nav .owl-prev:hover,
+.testimonial-carousel .owl-nav .owl-next:hover {
+    color: #20adff;
+    /* background: #20adff; */
+}
+
+@media (max-width: 768px) {
+    .testimonial-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 414px) {
+    .testimonial-carousel .owl-item img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.card-logo{
+    display:block;
+    width:70px!important;
+    height: 70px!important;
+}
+.card-logo2{
+    display:block;
+    width:162px!important;
+    height: 70px!important;
+}
+
+/*** Facts ***/
+/* .facts-overlay {
+    position: absolute;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: rgba(0, 0, 0, .65);
+}
+
+.facts-overlay h1 {
+    font-size: 90px;
+    color: #cccccc;
+    -webkit-text-stroke: 2px var(--primary);
+}
+
+.facts-overlay h6 {
+    font-size: 18px;
+    color: #cccccc;
+    -webkit-text-stroke: 2px var(--primary);
+}
+
+.facts-overlay a:hover {
+    color: var(--primary) !important;
+} */
+
+
+/*** Footer ***/
+.footer {
+    color: #ffffff;
+}
+
+.footer .btn.btn-link {
+    display: block;
+    margin-bottom: 5px;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
+    font-weight: normal;
+    text-transform: capitalize;
+    transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+    position: relative;
+    content: "\f105";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+    color: #5a5a5a;
+    letter-spacing: 1px;
+    box-shadow: none;
+}
+
+.footer .copyright {
+    padding: 25px 0;
+    font-size: 15px;
+    border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+    color: #EEEEEE;
+}
+
+.footer .copyright a:hover {
+    color: #00a2ff;
+}
+
+/*** ลบเส้นใต้ข้อความ ***/
+.d-line-bottom{
+    text-decoration: none;
+}
+
+/*** Dropdown ***/
+.dropdown-item:focus, .dropdown-item:hover {
+    color: #1e2125;
+    background-color: #6cc9ff;
+}
+
+
+.dropdown-item.active, .dropdown-item:active {
+    color: #fff;
+    text-decoration: none;
+    background: linear-gradient( 50deg, #7f9ef5, #2e89ff);
+}
+
+/*** พิ้นหลัง ***/
+.bg-sky{
+    background: linear-gradient( 50deg, #6cc9ff, #20adff);
+}
+.bg-red{
+    background: #bf1e2e;
+}
+
+.bg-borderbox{
+    color: #FFFFFF;
+    background: border-box;
+}
+.bg-borderbox:hover{
+    color: #FFFFFF;
+    background: linear-gradient( 50deg, #293a44, rgb(21, 50, 66));
+    transition: .5s;
+
+}
+
+/*** Buttom  ***/
+.btn-sky{
+    color: aliceblue;
+    background: linear-gradient( 50deg, #6cc9ff, #20adff);
+    border-color: #6cc9ff;
+}
+.btn-sky:hover {
+    color: #fff;
+    background: linear-gradient( 50deg, #25afff, #00a2ff);
+    border-color: #20adff;
+    
+    /* border: 2px solid #1e2125; */
+}
+
+/*** Text ***/
+
+.blog-sky{
+    color: #ffffff;
+    background: linear-gradient( 50deg, #6cc9ff, #20adff);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #6cc9ff;
+    border-top: #6cc9ff;
+    border-left: #6cc9ff;
+    border-right: #6cc9ff;
+    border-radius: 1%;
+}
+
+.text-shadow{
+    text-shadow: -2px 2px 4px #000000a3;
+}
+
+
+/*** Modal ***/
+
+.modal-header-edit {
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-top-left-radius: calc(0.3rem - 1px);
+    border-top-right-radius: calc(0.3rem - 1px);
+}
+.mx-68{
+    margin-right: 68rem!important;
+    margin-left: 68rem!important;
+}
+
+/*** Donation ***/
+.donation a{
+    width: 100%;
+    height: 100%;
+}
+.border-sky{
+   border: #83b5ff!important;
+}
+
+/*** breadcrumb ***/
+.breadcrumb-item.active {
+    color: #00a2ff;
+}
+.breadcrumb-item a {
+    color: #fff;
+}
+.breadcrumb-item a:hover{
+    color: #00a2ff;
+}
+
+/*** Text ***/
+.text-sky {
+    color: #00a2ff;
+    text-shadow: 2px 2px 5px #6cc9ff;
+}
