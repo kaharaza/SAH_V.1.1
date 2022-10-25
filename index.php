@@ -195,6 +195,7 @@
             </div>
           </div>
           <!-- คลิเฉพาะทาง -->
+         
           <div class="container">
                 
               <div class="row row-cols-1 row-cols-lg-5 row-cols-md-2 g-2 g-lg-3 g-4 justify-content-center">
@@ -395,18 +396,13 @@
 
               </div>
             </div>
-          <!-- <div class="row g-4 justify-content-center">
-            <div class="col-lg-12  wow fadeInUp" data-wow-delay="0.1s">
-              <div class=" bg-light overflow-hidden h-100">
-                <a href="assets/images/ตรารางเวลาเฉพาะทาง/คลินิกพิเศษ_V2.jpg" target="_blank">
-                  <img class="img-fluid" src="assets/images/ตรารางเวลาเฉพาะทาง/คลินิกพิเศษ_V2.jpg" alt="รูปตารางเวลา" />
-                </a>
-              </div>
-            </div>
-          </div> -->
       </div>
     </section>
     <!-- ตรารางเวลา End -->
+
+     
+
+
 
     <!-- Pr Start -->
     <section class="footer-img">

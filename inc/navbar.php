@@ -66,7 +66,14 @@
                                                           || $fire_name == 'specialized-12'
                                                           || $fire_name == 'specialized-13'
                                                           || $fire_name == 'specialized-14'
-                                                          || $fire_name == 'specialized-15' ? 'active': '' ?>" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-bell-concierge"></i> บริการของเรา</a>
+                                                          || $fire_name == 'specialized-15' 
+                                                          || $fire_name == 'med' 
+                                                          || $fire_name == 'surgery-1'
+                                                          || $fire_name == 'surgery-2'
+                                                          || $fire_name == 'surgery-3'
+                                                          || $fire_name == 'surgery-4'
+                                                          || $fire_name == 'surgery-5'
+                                                          ? 'active': '' ?>" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-bell-concierge"></i> บริการของเรา</a>
               <div class="dropdown-menu bg-sky m-0">
                 <a  class="dropdown-item text-light <?php echo $fire_name == 'med' ? 'active': '' ?>" href="med.php">อายุรกรรมทั่วไป</a>
                 <a class="dropdown-item text-light <?php echo $fire_name == 'specialized-1' 
@@ -83,17 +90,19 @@
                                                           || $fire_name == 'specialized-12'
                                                           || $fire_name == 'specialized-13'
                                                           || $fire_name == 'specialized-14'
-                                                          || $fire_name == 'specialized-15' ? 'active': '' ?>" href="" data-bs-toggle="modal" data-bs-target="#VetModal">คลินิกเฉพาะทาง</a>
+                                                          || $fire_name == 'specialized-15' 
+                                                          ? 'active': '' ?>" href="" data-bs-toggle="modal" data-bs-target="#VetModal">คลินิกเฉพาะทาง</a>
 
                 <a  class="dropdown-item text-light <?php echo $fire_name == 'surgery-1' 
                                                           || $fire_name == 'surgery-2' 
                                                           || $fire_name == 'surgery-3'
                                                           || $fire_name == 'surgery-4'
-                                                          || $fire_name == 'surgery-5' ? 'active': '' ?>" href="" data-bs-toggle="modal" data-bs-target="#surgery">ศัลยกรรม</a>
+                                                          || $fire_name == 'surgery-5' 
+                                                          ? 'active': '' ?>" href="" data-bs-toggle="modal" data-bs-target="#surgery">ศัลยกรรม</a>
 
                 <a href="ward.php" class="dropdown-item text-light <?php echo $fire_name == 'ward' ? 'active': '' ?>">หออภิบาลสัตว์ป่วย</a>
                 <a href="emergency.php" class="dropdown-item text-light <?php echo $fire_name == 'emergency' ? 'active': '' ?>">หน่วยฉุกเฉิน</a>
-                <a href="ward.php" class="dropdown-item text-light">ห้องปฏิบัติการ</a>
+                <a href="lab.php" class="dropdown-item text-light <?php echo $fire_name == 'lab' ? 'active': '' ?>">ห้องปฏิบัติการ</a>
                 <a href="404.html" class="dropdown-item text-light">ทัศนวินิจฉัย</a>
               </div>
             </div>

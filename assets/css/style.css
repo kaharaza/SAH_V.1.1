@@ -202,6 +202,18 @@ html body {
     background-size: cover;
 }
 
+.page-er {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/21.png) center center no-repeat;
+    background-size: cover;
+
+}
+
+.page-lab {
+    padding: 200px 0px 150px;
+    background: linear-gradient(rgba(0, 0, 0, .65), rgba(0, 0, 0, .65)), url(../../assets/images/คลินิกเฉพาะทาง/22.jpg) center center no-repeat;
+    background-size: cover;
+}
 
 .page-header {
     padding: 200px 0px 150px;
@@ -290,6 +302,49 @@ html body {
     color: #999999;
 }
 
+/*** Section Title ***/
+.section-title {
+    position: relative;
+    display: inline-block;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.section-title::before {
+    position: absolute;
+    content: "";
+    width: calc(100% + 80px);
+    height: 2px;
+    top: 5px;
+    left: -40px;
+    background: #00a2ff;
+    z-index: -1;
+}
+
+.section-title::after {
+    position: absolute;
+    content: "";
+    width: calc(100% + 120px);
+    height: 2px;
+    bottom: 6px;
+    left: -60px;
+    background: #00a2ff;
+    z-index: -1;
+}
+
+.section-title.text-start::before {
+    width: calc(100% + 40px);
+    left: 0;
+}
+
+.section-title.text-start::after {
+    width: calc(100% + 60px);
+    left: 0;
+}
+
+
+
+
 /*** Service ***/
 .service-text::before {
     position: absolute;
@@ -301,6 +356,9 @@ html body {
     background: #6cc9ff;
     opacity: 0;
     transition: .5s;
+}
+.service-item{
+    border-radius: 8px;
 }
 
 .service-item:hover .service-text::before {
@@ -317,6 +375,9 @@ html body {
 .service-item:hover .service-text * {
     color: #FFFFFF !important;
 }
+
+
+
 
 /*** Team ***/
 .team-text {
@@ -495,7 +556,7 @@ html body {
 
 /*** พิ้นหลัง ***/
 .bg-sky{
-    background: linear-gradient( 50deg, #6cc9ff, #20adff);
+    background: linear-gradient( 0deg, #006199, #20adff);
 }
 .bg-red{
     background: #bf1e2e;
@@ -515,12 +576,12 @@ html body {
 /*** Buttom  ***/
 .btn-sky{
     color: aliceblue;
-    background: linear-gradient( 50deg, #6cc9ff, #20adff);
+    background: linear-gradient( 50deg, #3db2f5, #009cf7);
     border-color: #6cc9ff;
 }
 .btn-sky:hover {
-    color: #fff;
-    background: linear-gradient( 50deg, #25afff, #00a2ff);
+    color: #000;
+    background: linear-gradient( 50deg, #c7e4f5, #a8dfff);
     border-color: #20adff;
     
     /* border: 2px solid #1e2125; */
