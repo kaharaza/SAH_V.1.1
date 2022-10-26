@@ -89,15 +89,7 @@
             <li class="nav-item" role="presentation">
                 <button class="nav-link text-white" id="p4" data-bs-toggle="tab" data-bs-target="#p4-1" type="button" role="tab" aria-controls="p4-1" aria-selected="false">ผู้ช่วยสัตวแพทย์</button>
             </li>
-            <!-- <li class="nav-item" role="presentation">
-                <button class="nav-link text-white" id="p5" data-bs-toggle="tab" data-bs-target="#p5-1" type="button" role="tab" aria-controls="p5-1" aria-selected="false">เจ้าหน้าที่</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-white" id="p6" data-bs-toggle="tab" data-bs-target="#p6-1" type="button" role="tab" aria-controls="p6-1" aria-selected="false">เจ้าหน้าที่</button>
-            </li>
-            <li class="nav-item" role="presentation">
-                <button class="nav-link text-white" id="p7" data-bs-toggle="tab" data-bs-target="#p7-1" type="button" role="tab" aria-controls="p7-1" aria-selected="false">เจ้าหน้าที่</button> -->
-            </li>
+          
         </ul>
     </section>
 

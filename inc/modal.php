@@ -304,3 +304,59 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal ข้อเสนอแนะ -->
+   <div class="modal fade" id="comment" tabindex="-1" aria-labelledby="comment1" aria-hidden="true">
+    <div class="modal-dialog modal-lg  modal-dialog-centered ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="comment1">ข้อเสนอแนะ</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form action="php/comment.php" method="POST">
+                <div class="form-group">
+                    <textarea class="form-control" id="comment" name="comment" cols="30" rows="10" placeholder="เขียนข้อความของคุณที่นี้" required></textarea>
+                </div>
+              </form>
+          </div> 
+        </div>
+    </div>
+  </div>
+   
+  <!-- Modal งานวิจัย -->
+  <div class="modal fade" id="research1" tabindex="-1" aria-labelledby="exampleModalresearch1" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalresearch1">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...1.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" type="button" class="btn btn-primary">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="research2" tabindex="-1" aria-labelledby="exampleModalresearch2" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-scrollable modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalresearch2">Modal title</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ...2.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <a href="#" type="button" class="btn btn-primary">Download PDF</a>
+        </div>
+      </div>
+    </div>
+  </div>

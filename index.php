@@ -606,6 +606,8 @@
     <!-- JS -->
     <script src="assets/js/main.js"></script>
 
+    
+
     <script>
       // popup-modal
     $(document).ready(function(){
@@ -616,8 +618,6 @@
         });
     });
 
-    
- 
     </script>
    
 </body>

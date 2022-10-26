@@ -42,7 +42,15 @@
         return false;
     });
 
-
+     // comment s
+     $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('.comment-s').fadeIn('slow');
+        } else {
+            $('.comment-s').fadeOut('slow');
+        }
+    });
+  
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
         autoplay: true,

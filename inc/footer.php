@@ -64,6 +64,17 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-sky btn-lg-square back-to-top">
+    <a href="#" class="btn btn-lg btn-sky rounded-circle btn-lg-square back-to-top">
       <i class="bi bi-arrow-up"></i>
     </a>
+
+    <!-- comment s -->
+    <a  href="#" class=" btn btn-lg rounded-circle btn-danger bg-lg-square comment-s" 
+       data-bs-toggle="modal" 
+       data-bs-target="#comment" 
+       data-bs-toggle="tooltip" 
+       data-bs-placement="top"
+       title="ข้อเสนอแนะ">
+        <i class="fa-solid fa-comment-dots"></i>
+    </a>
+

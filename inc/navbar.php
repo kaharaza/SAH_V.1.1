@@ -73,6 +73,7 @@
                                                           || $fire_name == 'surgery-3'
                                                           || $fire_name == 'surgery-4'
                                                           || $fire_name == 'surgery-5'
+                                                          || $fire_name == 'xray'
                                                           ? 'active': '' ?>" href="#" data-bs-toggle="dropdown"><i class="fa-solid fa-bell-concierge"></i> บริการของเรา</a>
               <div class="dropdown-menu bg-sky m-0">
                 <a  class="dropdown-item text-light <?php echo $fire_name == 'med' ? 'active': '' ?>" href="med.php">อายุรกรรมทั่วไป</a>
@@ -103,10 +104,10 @@
                 <a href="ward.php" class="dropdown-item text-light <?php echo $fire_name == 'ward' ? 'active': '' ?>">หออภิบาลสัตว์ป่วย</a>
                 <a href="emergency.php" class="dropdown-item text-light <?php echo $fire_name == 'emergency' ? 'active': '' ?>">หน่วยฉุกเฉิน</a>
                 <a href="lab.php" class="dropdown-item text-light <?php echo $fire_name == 'lab' ? 'active': '' ?>">ห้องปฏิบัติการ</a>
-                <a href="404.html" class="dropdown-item text-light">ทัศนวินิจฉัย</a>
+                <a href="xray.php" class="dropdown-item text-light <?php echo $fire_name == 'xray' ? 'active': '' ?> ">ทัศนวินิจฉัย</a>
               </div>
             </div>
-            <a href="index.php#pr" class="nav-item nav-link "><i class="fa-brands fa-blogger"></i> ข่าวประชาสัมพันธ์</a>
+            <a href="research.php" class="nav-item nav-link <?php echo $fire_name == 'research' ? 'active': '' ?> "><i class="fa-brands fa-blogger"></i> ผลงานวิจัย</a>
             <a href="contact.php" class="nav-item nav-link"><i class="fa-regular fa-id-badge"></i> ติดต่อเรา</a>
             <div class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle " data-bs-toggle="dropdown"><i class="fa-solid fa-language"></i> ภาษา</a>
