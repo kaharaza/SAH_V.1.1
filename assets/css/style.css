@@ -23,6 +23,37 @@ html body {
     cursor: pointer;
 }
 
+/*** menumini ***/
+.menumini{
+    /* background: linear-gradient( 50deg, #3db2f5, #009cf7); */
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    line-height: 40px;
+    height: 49px;
+    width: 213px;
+    padding-top: 5px;
+    padding-right: 30px;
+    position: fixed;
+    bottom: 100px;
+    right: 2%;
+    cursor: pointer;
+    border-radius: 30px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transition 0.1s;
+}
+
+#share-button:checkbox ~ .menumini {
+    transform: scale(1);
+}
+.show-menu {
+    opacity: 0;
+    transition: .1s;
+}
+
+
+
 /*** ICON LOGO ***/
 .cuttom-iconlogo img {
     width: 80%;

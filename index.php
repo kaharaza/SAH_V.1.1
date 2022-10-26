@@ -610,13 +610,13 @@
 
     <script>
       // popup-modal
-    $(document).ready(function(){
-        $("#popup-modal").modal("show");
+    // $(document).ready(function(){
+    //     $("#popup-modal").modal("show");
         
-        $(".close-btn").click(function(){
-            $("#popup-modal").modal("hide");
-        });
-    });
+    //     $(".close-btn").click(function(){
+    //         $("#popup-modal").modal("hide");
+    //     });
+    // });
 
     </script>
    

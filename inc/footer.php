@@ -64,17 +64,43 @@
     <!-- Footer End -->
 
     <!-- Back to Top -->
-    <a href="#" class="btn btn-lg btn-sky rounded-circle btn-lg-square back-to-top">
+    <a href="#" class="btn btn-lg btn-sky rounded-circle btn-lg-square back-to-top"  
+       data-bs-toggle="tooltip" 
+       data-bs-placement="top"
+       title="scrollTop">
       <i class="bi bi-arrow-up"></i>
     </a>
 
     <!-- comment s -->
-    <a  href="#" class=" btn btn-lg rounded-circle btn-danger bg-lg-square comment-s" 
+    <!-- <a  href="#" class=" btn btn-lg rounded-circle btn-danger bg-lg-square comment-s" 
        data-bs-toggle="modal" 
        data-bs-target="#comment" 
        data-bs-toggle="tooltip" 
        data-bs-placement="top"
        title="ข้อเสนอแนะ">
         <i class="fa-solid fa-comment-dots"></i>
-    </a>
+    </a> -->
 
+    <button   type="checkbox" class=" btn btn-lg rounded-circle btn-sky bg-lg-square comment-s" id="share-button" 
+       data-bs-toggle="tooltip" 
+       data-bs-placement="top"
+       title="Comment">
+        <i class="fa-solid fa-comment-dots"></i>
+    </button>
+
+    <div class="menumini">
+      <button class="btn btn-danger btn-sm " 
+       data-bs-toggle="modal" 
+       data-bs-target="#comment" >
+      <i class="fa-solid fa-plus"></i> ข้อเสนอแนะ
+      </button>
+      <button class="btn btn-primary btn-sm ">
+      <i class="fa-solid fa-minus"></i> ข้อร้องเรียน
+      </button>
+    </div>
+ <!-- <div class="menumini">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-solid fa-comment"></i>
+      <i class="fa-solid fa-share-nodes"></i>
+    </div> -->

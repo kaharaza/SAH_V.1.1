@@ -44,12 +44,21 @@
 
      // comment s
      $(window).scroll(function () {
-        if ($(this).scrollTop() > 300) {
+        if ($(this).scrollTop() > 390) {
             $('.comment-s').fadeIn('slow');
+            $('.menumini').fadeIn('slow');   
         } else {
             $('.comment-s').fadeOut('slow');
+            $('.menumini').fadeOut('slow'); 
         }
     });
+    $('.comment-s').click(function () {
+        $('.menumini').css({"transform":"scale(1)"}).toggleClass('show-menu');
+        return false;
+    });
+
+ 
+    
   
     // Testimonials carousel
     $(".testimonial-carousel").owlCarousel({
